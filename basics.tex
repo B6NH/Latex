@@ -1,0 +1,96 @@
+
+% Create article
+\documentclass{article}
+\begin{document}
+This is my \emph{first} document prepared in \LaTeX.
+I typed it on \today.
+
+% New paragraph
+We have seen that to typeset something in \LaTeX, we type in the
+text to be typeset together with some \LaTeX\ commands.
+Words must be separated by spaces (does not matter how many)
+and lines maybe broken arbitrarily.
+
+% Paragraph without indentation
+\noindent The end of a paragraph is specified by a \emph{blank line}
+in the input. In other words, whenever you want to start a new
+paragraph, just leave a blank line and proceed.
+
+% Extra space after period - '\@'
+Carrots are good for your eyes, since they contain Vitamin A\@.
+Have you ever seen a rabbit wearing glasses?
+
+% No extra space after period - '\ '
+The numbers 1, 2, 3, etc.\ are called natural numbers.
+According to Kronecker, they were made by God; all else being the work of Man.
+
+% Explicit space after command
+I think \LaTeX\ is fun.
+
+% Opening and closing quotes
+Note the difference in right and left quotes in `single quotes' and ``double quotes".
+
+% Various types of dashes
+X-rays are discussed in pages 221--225 of Volume 3---the volume on
+electromagnetic waves.
+
+% Accent
+\'{E}l est\'{a} aqu\'{\i}.
+
+% Symbols
+Maybe I have now learnt about 1\% of \LaTeX :
+\$, \textbackslash, \#, \ss, \O, \AE, \l, \L, ?`.\\
+Break 1.\\[10pt] Break 2. % Optional argument to \\
+
+% Environment
+\begin{center}
+The \TeX nical Institute\\[.75cm]
+Certificate
+\end{center}
+\noindent This is to certify that Mr. N. O. Vice has undergone a
+course at this institute and is qualified to be a \TeX nician.
+\begin{flushright}
+The Director\\
+The \TeX nical Institute
+\end{flushright}
+
+% Type style is specified by family, series and shape
+\textit{roman family, medium series, italic shape type.}
+\textbf{roman family, boldface series, upright shape type.}
+
+% Combine family, series and shape
+\textrm{\textsl{roman family, medium series, slanted shape.}}
+
+% Command \emph and italic shape
+\textit{A polygon of three sides is called a \emph{triangle} and a
+polygon of four sides is called a \emph{quadrilateral}}
+
+% Change style with command or declaration
+By a \textbf{triangle}, we mean a polygon of three sides.
+By a {\bfseries triangle}, we mean a polygon of three sides.
+
+% Declaration name as environment name
+\begin{sffamily}
+These declaration names can also be used as environment names.
+\end{sffamily}
+
+% Type size
+{\scriptsize scriptsize} {\small small} {\Large Large}
+
+% Break current page
+\pagebreak
+
+% Combine style changes with size changes
+\begin{center}
+{\bfseries\huge The \TeX nical Institute}\\[1cm]
+{\scshape\LARGE Certificate}
+\end{center}
+\noindent This is to certify that Mr. N. O. Vice has undergone a
+course at this institute and is qualified to be a \TeX nical Expert.
+\begin{flushright}
+{\sffamily The Director\\
+The \TeX nical Institute}
+\end{flushright}
+
+\end{document}
+
