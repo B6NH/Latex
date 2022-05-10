@@ -1,3 +1,3 @@
 # Latex
 
-Latex Tutorials - A Primer
+Latex with the book "Latex Tutorials - A Primer" by Indian TEX Users Group
