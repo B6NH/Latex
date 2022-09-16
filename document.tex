@@ -4,10 +4,13 @@
 % Create book and choose options
 \documentclass[12pt,a4paper]{book}
 
+% Set text width
+%\setlength{\textwidth}{15cm}
+
 % Set title, author and date
 \title{Title}
-\author{Author 1 \and Author 2}
-%\date{1/6/2022}
+\author{Author 1\thanks{thanks 1} \and Author 2}
+\date{5/5/2022\thanks{thanks 2}}
 
 % Set page style
 \pagestyle{plain}
@@ -19,6 +22,8 @@
 
 \maketitle
 
+\part{Latex}
+
 \chapter{Basics}
 
 %\begin{abstract}
@@ -27,10 +32,7 @@
 % Set initial page number
 %\setcounter{page}{257}
 
-% Set text width
-%\setlength{\textwidth}{11cm}
-
-I thought that I was asleep, and waiting for Jonathan to come back.
+I thought that I was asleep, and \texttt{waiting} for Jonathan to come back.
 I was very anxious about him, and I was powerless to act; my feet,
 and my hands, and my brain were weighted, so that nothing could proceed
 at the usual pace. And so I slept uneasily and thought. Then it began to
@@ -76,10 +78,31 @@ Nam eu magna leo. In aliquam nisl in vestibulum suscipit. Proin consectetur, tur
 porttitor fringilla, dolor dui finibus neque, id iaculis sem lacus lacinia sapien. Proin
 tincidunt nisi sed ligula luctus lobortis.
 
+\subsubsection{Document Subsubsection}
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+egestas. Fusce quam erat, dapibus at arcu quis, \textit{gravida} aliquet tellus. Fusce a vestibulum
+nibh. Cras maximus\footnote{test footnote} imperdiet velit, sed hendrerit leo tincidunt sit amet.
+Donec lacinia efficitur eros, scelerisque efficitur turpis pretium placerat. Nam a orci
+quam. Suspendisse potenti.
+
 \paragraph{Note}
+
 Phasellus consectetur enim ac quam pretium bibendum. Aenean hendrerit metus eu ex viverra
 sollicitudin. Morbi suscipit mi enim, a consequat libero bibendum at. Ut sodales
 consectetur leo ac tempus.
+
+\subparagraph{Subparagraph}
+
+Quisque commodo ullamcorper pellentesque. Praesent quam erat, dignissim nec lobortis non,
+porttitor elementum nisi. Nulla nec blandit eros, ac interdum ante. Aenean ut rhoncus
+velit. Nam commodo ante in tincidunt venenatis. Praesent in lacus tempus, elementum odio
+eget, sagittis velit. Aliquam erat volutpat. Cras viverra nisl sodales molestie finibus.
+
+\section*{Starred section}
+
+Sed id ullamcorper urna. Praesent euismod feugiat lorem. Proin vulputate massa vitae nibh
+sagittis accumsan.
 
 \end{document}
 
