@@ -1,4 +1,4 @@
-# Latex
+# ![Logo](https://i.imgur.com/JjBBJF7.png)
 
 Latex examples from book "Latex Tutorials - A Primer"
 
@@ -6,7 +6,7 @@ Latex examples from book "Latex Tutorials - A Primer"
 
 1. [The Basics](basics.tex)
 2. [The Document](document.tex)
-3. [Bibliography](bibliography.tex)
+3. [Bibliography](bibliography)
 4. [Bibliographic Database](database.tex)
 5. [Table of contents, Index and Glossary](contents.tex)
 6. [Displayed text](display.tex)

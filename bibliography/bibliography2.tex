@@ -1,0 +1,41 @@
+
+% Bibliography 2
+
+\documentclass{article}
+
+% Use natbib package without options
+\usepackage{natbib}
+
+% Define citation alias
+\defcitealias{don89}{Paper~I}
+
+% Configure citation style and punctuation
+%\bibpunct{[}{]}{,}{a}{}{;}
+
+% Superscripts
+%\citestyle{nature}
+
+\begin{document}
+
+% Textual and parenthetical citations
+Vestibulum ut consectetur \citet{les85} nisl, eu euismod augue. Donec suscipit risus sed
+eros pharetra vulputate. Nulla a sem maximus ipsum molestie dapibus \citep{don89} at sed
+est. Etiam et odio nunc. Integer sit amet \citep[see][chap.~4]{rondon89} dui eros. Morbi
+\citep{les85,rondon89} condimentum nulla sed dictum tempus. Mauris id lectus \citealt{les85}
+aliquet massa porttitor \citealp{don89} commodo. Morbi vel sapien risus. Morbi luctus, urna
+a pharetra scelerisque, purus turpis rhoncus odio, nec ornare \citetext{parentheses} nibh
+velit et sapien. Duis pulvinar quam ac vulputate euismod. Morbi elementum justo mauris,
+sed varius nunc sollicitudin ac. Donec imperdiet, eros nec dapibus blandit, ante neque
+\citeauthor{les85} fringilla lorem, vel accumsan tellus lacus ut urna. Nunc libero purus,
+suscipit \citeyearpar{rondon89} quis laoreet sit amet \citepalias{don89}, consectetur ut
+nisi. Phasellus sollicitudin augue odio, ut cursus arcu auctor maximus. Proin sed dolor ac
+risus venenatis fermentum consequat vel lectus. Integer \citetalias{don89} auctor diam sed
+bibendum convallis.
+
+\begin{thebibliography}{9}
+  \bibitem[Leslie(1985)]{les85}Leslie Lamport, 1985. \emph{\LaTeX---A Document Preparation}
+  \bibitem[Donale(00)]{don89}Donald E. Knuth, 1989. \emph{Typesetting Concrete Mathematics}
+  \bibitem[Ronald, Donald and Ore(1989)]{rondon89}Ronald L. Graham, 1989.
+\end{thebibliography}
+
+\end{document}
