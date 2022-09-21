@@ -1,2 +1,38 @@
 
 % Typesetting Theorems
+
+\documentclass{article}
+
+% Create theorems
+\usepackage{amsthm}
+\newtheorem{thm}{Theorem}[section]
+\theoremstyle{definition}
+\newtheorem{dfn}{Definition}[section]
+\theoremstyle{remark}
+\newtheorem{note}{Note}[section]
+\theoremstyle{plain}
+\newtheorem{lem}[thm]{Lemma}
+
+\begin{document}
+
+% Display theorems
+\begin{dfn}
+A triangle is the figure formed by joining each pair
+of three non collinear points by line segments.
+\end{dfn}
+\begin{note}
+A triangle has three angles.
+\end{note}
+\begin{thm}
+The sum of the angles of a triangle is $180^\circ$.
+\end{thm}
+
+% Proof
+\begin{lem}
+The sum of any two sides of a triangle is greater than or equal to the third.
+\end{lem}
+\begin{proof}
+Suspendisse vel sem et urna rutrum faucibus. Nam vulputate condimentum eros. Integer sagittis volutpat sem, et suscipit orci congue nec.
+\end{proof}
+
+\end{document}

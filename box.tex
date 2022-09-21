@@ -1,2 +1,25 @@
 
 % Several Kinds of Boxes
+
+\documentclass{article}
+
+\begin{document}
+
+% Framebox
+\framebox{A few words of advice}\\[6pt]
+\framebox[5cm][s]{A few words of advice}\\[6pt]
+
+% Set box line width
+\fbox{Text in a box}
+\setlength\fboxrule{2pt}\setlength\fboxsep{2mm}
+\fbox{Text in a box}
+
+% Raised boxes
+baseline \raisebox{1ex}{upward} baseline
+\raisebox{-1ex}{downward} baseline
+
+% Rule boxes
+\rule{8mm}{3mm}
+\rule{3in}{.2pt}
+
+\end{document}

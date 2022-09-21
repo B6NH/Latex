@@ -1,2 +1,67 @@
 
 % Footnotes, Marginpars, and Endnotes
+
+\documentclass{article}
+
+% Macro definition
+\def\query#1#2{\underline{#1}\marginpar{#2}}
+
+\begin{document}
+
+% Footnote
+Nulla quis ultrices urna. Cras\footnote{Footnote text} viverra bibendum tellus id ornare.
+Ut volutpat nisi vitae nibh ultrices volutpat. Nunc fringilla nibh eu
+lorem ultrices eleifend. Sed feugiat erat eget mauris gravida imperdiet.
+Sed vehicula velit eu purus finibus blandit. Pellentesque eget ipsum
+purus. Curabitur vitae malesuada lacus.
+
+% Minipage footnote
+\begin{minipage}{5cm}
+Footnotes in a minipage are numbered
+using lowercase letters.\footnote{%
+Inside minipage} \par This text
+references a footnote at the bottom
+of the page.\footnotemark
+\end{minipage}
+\footnotetext{At bottom of page}
+
+Quisque non mauris consectetur, ultricies massa eu, pharetra dui.
+Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+per inceptos himenaeos. Quisque vel libero efficitur odio venenatis
+accumsan. Donec ligula nibh, cursus a mauris ac, ullamcorper accumsan erat.
+
+% Tabular environment and footnotes inside minipage
+\begin{minipage}{.5\linewidth}
+\renewcommand{\thefootnote}{\thempfootnote}
+\begin{tabular}{ll}
+\multicolumn{2}{c}{\bfseries PostScript type 1 fonts} \\
+Courier\footnote{Donated by IBM.} & cour,courb,courbi,couri \\
+Charter\footnote{Donated by Bitstream.} & bchb,bchbi,bchr,bchri\\
+Nimbus\footnote{Donated by URW GmbH.} & unmr, unmrs \\
+URW Antiqua\footnotemark[\value{mpfootnote}] & uaqrrc\\
+URW Grotesk\footnotemark[\value{mpfootnote}] & ugqp\\
+Utopia\footnote{Donated by Adobe.} & putb, putbi, putr, putri
+\end{tabular}
+\end{minipage}
+
+% Marginal note and line
+Suspendisse a risus non dui \marginpar{This is a marginal note}bibendum
+ullamcorper eu ac nunc. Donec commodo lorem quis tincidunt aliquam.
+Vivamus sem lectus,lacinia ac nunc non, vestibulum eleifend velit. Nunc felis dui,
+gravida in tincidunt vitae, tempor sit amet risus. Vestibulum purus
+est, ultrices eget eleifend quis, porta ut metus.
+Duis mattis tristique felis, quis maximus metus ultricies quis. Sed eget sapien ac tellus
+sodales euismod. In diam ante, volutpat ac dolor vitae, scelerisque eleifend odio. Proin
+semper eros id felis \marginpar{\rule[-10.5mm]{1mm}{10mm}} congue vulputate. Proin
+aliquam enim at urna accumsan fringilla. Integer rhoncus sapien ut nibh iaculis
+feugiat. Proin quis nibh neque. Cras diam velit, varius dignissim aliquam vitae,
+efficitur sed eros. Nullam placerat pretium leo et fringilla. Nunc odio metus,
+scelerisque at molestie id, euismod ut arcu. Pellentesque at nulla a mi accumsan
+pharetra eu bibendum arcu. Duis finibus est quis leo egestas fermentum. Etiam
+molestie vehicula tellus lobortis posuere. Morbi lacinia et arcu eu consequat.
+Curabitur quis tellus nisi.
+
+% Underlining and marginal note
+For example \query{\LaTeX}{Hey!\\ Look}{}.
+
+\end{document}
