@@ -1,2 +1,92 @@
 
 % Displayed Text
+
+\documentclass{article}
+\begin{document}
+
+Mauris sed interdum arcu. Maecenas aliquet nulla nisl, id auctor orci ornare eget.
+Nullam nec ipsum sapien. Sed ac venenatis felis. Praesent magna tellus, placerat at
+dictum in, consequat sit amet metus. Fusce sit amet laoreet nibh. Vestibulum aliquam,
+massa fringilla ultrices pharetra, eros elit dignissim ipsum, vitae suscipit orci nunc
+non purus. Integer efficitur lectus et nisl vulputate, sit amet interdum leo porttitor.
+Etiam varius sodales efficitur.
+
+% Quotation
+\begin{quote}
+Nam tempor ligula quis mi semper, eget ultricies metus feugiat. Nam arcu velit, commodo
+in dolor non, malesuada aliquam orci. Nam quis turpis a leo suscipit placerat sed eu nisl.
+Aenean vulputate tincidunt dignissim. Donec quam purus, blandit id condimentum eget,
+pharetra ut dolor.
+\end{quote}
+
+Aenean ac maximus magna. Etiam volutpat mauris eget libero sollicitudin iaculis.
+Mauris dapibus non mi vitae convallis. Nulla ultricies quam a volutpat tristique.
+Nunc sollicitudin feugiat justo sit amet tempus.
+
+% Poetry
+\begin{verse}
+Donec condimentum nisl est,\\
+ut tristique erat sagittis a.\\
+Ut fermentum turpis nisi,\\
+non varius dolor suscipit\\
+facilisis. Mauris dignissim\\
+sapien turpis.
+\end{verse}
+
+Mauris facilisis enim ut massa fringilla, a placerat tellus lacinia.
+Nunc iaculis posuere mollis. Aenean sed sapien erat. Proin vulputate et
+mauris eget imperdiet.
+
+% List with bullets
+\begin{itemize}
+\item \TeX\ is a typesetting language and not a word processor
+\item \TeX\ is a program and and not an application
+\item Theres is no meaning in comparing \TeX\ to a word processor, since the design
+purposes are different
+\end{itemize}
+
+Nunc id lacus eget mi dictum posuere. Aenean ac commodo mi. Sed tincidunt, nisi sit
+amet pretium pretium, ligula odio molestie eros, id placerat odio quam eget velit.
+
+% List with triangles
+{\renewcommand{\labelitemi}{$\triangleright$}
+\begin{itemize}
+\item First item of a new list
+\item Second item
+\end{itemize}}
+
+\pagebreak
+
+Proin commodo, magna sit amet rutrum tempor, turpis nibh volutpat urna, sed volutpat
+ante leo sed nibh. Donec vel magna vel mi viverra commodo.
+
+% Numbered list
+\begin{enumerate}
+\item prepare a source file with the extension "tex"
+\item Compile it with \LaTeX to produce a "dvi" file
+\item Print the document using a "dvi" driver
+\end{enumerate}
+
+In id sagittis elit. Donec at turpis mauris. Nullam vulputate malesuada nisi eget
+facilisis. Phasellus et tortor est. Integer in tincidunt orci. Duis ac justo eu
+turpis viverra mollis eget at risus. Nullam placerat pharetra neque ac faucibus. Sed
+et elementum sem, id vestibulum neque.
+
+% Description list
+\begin{description}
+\item[\TeX] A typesetting program
+\item[Emacs] A text editor and also
+\begin{description}
+\item a programming environment
+\item a mailer
+\item and a lot else besides
+\end{description}
+\item[AbiWord] A word processor
+\end{description}
+
+Nam ornare mi vel luctus feugiat. Nam aliquam purus id mauris dignissim, vehicula
+ornare diam viverra. Integer tempor, urna id sollicitudin pretium, libero lacus
+dignissim justo, sit amet placerat urna eros id ante. Ut pretium venenatis massa, at
+elementum dolor congue id. Vestibulum malesuada in quam ac posuere.
+
+\end{document}

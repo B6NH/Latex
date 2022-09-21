@@ -1,2 +1,30 @@
 
 % Table of contents, Index and Glossary
+
+\documentclass{book}
+
+\makeglossary
+
+\title{Sachairi}
+\author{Michelle Cait}
+
+\begin{document}
+
+\maketitle
+
+\chapter{First Chapter}
+
+% Add line to table of contents
+\addcontentsline{toc}{chapter}{1.5 Middle Chapter}
+
+% Add formatting information
+\addtocontents{toc}{\protect\vspace{4ex}}
+
+\chapter{Second Chapter}
+
+% Display table of contents, list of figureas and list of tables
+\tableofcontents
+\listoffigures
+\listoftables
+
+\end{document}

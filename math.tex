@@ -1,2 +1,230 @@
 
 % Typesetting Mathematics
+
+\documentclass{article}
+
+\usepackage{amsmath}
+
+% Define operator names
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator*{\esup}{ess\,sup}
+
+\begin{document}
+
+% Math in text
+The equation representing a straight line in the Cartesian plane
+is of the form $ax+by+c=0$, where $a$, $b$, $c$ are constants.
+
+% Mathematical text
+The equation representing a straight line in the Cartesian plane is of
+the form \(ax+by+c=0\), where \(a\), \(b\), \(c\) are constants.
+
+% Other method
+The equation representing a straight line in the Cartesian plane is
+of the form \begin{math}ax+by+c=0\end{math}, where \begin{math} a
+\end{math}, \begin{math} b \end{math}, \begin{math} c \end{math} are
+constants.
+
+% Centered equation
+The equation representing a straight line in the Cartesian plane is
+of the form
+$$
+ax+by+c=0
+$$
+where $a$, $b$, $c$ are constants.
+
+% Superscripts
+In the seventeenth century, Fermat conjectured that if $n>2$, then
+there are no integers $x$, $y$, $z$ for which
+$$
+x^n+y^n=z^n.
+$$
+This was proved in 1994 by Andrew Wiles.
+
+% Subscripts
+The sequence $(x_n)$ defined by
+$$
+x_1=1,\quad x_2=1,\quad x_n=x_{n-1}+x_{n-2}\;\;(n>2)
+$$
+is called the Fibonacci sequence.
+
+% Superscripts and subscripts
+$$
+x_m^n\qquad x^n_m\qquad {x_m}^n\qquad {x^n}_m
+$$
+
+% Roots
+Which is greater $\sqrt[4]{5}$ or $\sqrt[5]{4}$?
+
+% Special symbol
+For real numbers $x$ and $y$, define an operation $\circ$ by
+$$
+x\circ y = x+y-xy
+$$
+This operation is associative.
+
+% Create and use new command
+\newcommand{\vect}{(x_1,x_2,\dots,x_n)}
+We often write $x$ to denote the vector $\vect$.
+
+% Command with argument
+\newcommand{\vectt}[1]{(#1_1,#1_2,\dots,#1_n)}
+Vector $\vectt{a}$
+
+% Cases
+\begin{equation*}
+|x| =
+\begin{cases}
+x & \text{if $x\ge 0$}\\
+-x & \text{if $x\le 0$}
+\end{cases}
+\end{equation*}
+
+% Matrices
+The system of equations
+\begin{align*}
+x+y-z & = 1\\
+x-y+z & = 1\\
+x+y+z & = 1
+\end{align*}
+can be written in matrix terms as
+\begin{equation*}
+\begin{pmatrix}
+1 & 1 & -1\\
+1 & -1 & 1\\
+1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x\\
+y\\
+z
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix}.
+\end{equation*}
+Here, the matrix
+$\begin{pmatrix}
+1 & 1 & -1\\
+1 & -1 & 1\\
+1 & 1 & 1
+\end{pmatrix}$
+is invertible.
+
+
+% Matrix with square brackets
+Square brackets
+$
+\begin{bmatrix}
+a & b\\
+c & d
+\end{bmatrix}
+$
+
+% Matrix with lines
+Determinant
+$
+\begin{vmatrix}
+a & b\\
+c & d
+\end{vmatrix}
+$
+
+% Dots
+Consider a finite sequence $X_1,X_2,\dotsc$, its sum $X_1+X_2+\dotsb$
+and product $X_1X_2\dotsm$.
+
+% Small matrices
+$
+\left|\begin{smallmatrix}
+a & h & g\\
+h & b & f\\
+g & f & c
+\end{smallmatrix}\right|
+=0
+$,
+the matrix
+$
+\left(\begin{smallmatrix}
+a & h & g\\
+h & b & f\\
+g & f & c
+\end{smallmatrix}\right)
+$
+is not invertible.
+
+% Sums
+For $n$-tuples of complex numbers $(x_1,x_2,\dotsc,x_n)$ and
+$(y_1,y_2,\dotsc,y_n)$ of complex numbers
+\begin{equation*}
+\left(\sum_{k=1}^n|x_ky_k|\right)^2\le
+\left(\sum_{k=1}^{n}|x_k|\right)\left(\sum_{k=1}^{n}|y_k|\right)
+\end{equation*}
+
+% Fractions
+From the binomial theorem, it easily follows that if $n$ is an even
+number, then
+\begin{equation*}
+1-\binom{n}{1}\frac{1}{2}+\binom{n}{2}\frac{1}{2^2}-\dotsb
+-\binom{n}{n-1}\frac{1}{2^{n-1}}=0
+\end{equation*}
+
+% Small fractions
+Since $(x_n)$ converges to $0$, there exists a positive integer $p$
+such that
+\begin{equation*}
+|x_n|<\tfrac{1}{2}\quad\text{for all $n\ge p$}
+\end{equation*}
+
+% Arrows
+Thus we get
+\begin{equation*}
+0\xrightarrow{} A\xrightarrow[\text{monic}]{f}
+B\xrightarrow[\hspace{7pt}\text{epi}\hspace{7pt}]{g}
+C\xrightarrow{}0
+\end{equation*}
+
+% Infinity
+Euler not only proved that the series
+$\sum_{n=1}^\infty\frac{1}{n^2}$ converges, but also that
+\begin{equation*}
+\sum_{n=1}^\infty\frac{1}{n^2}=\frac{\pi^2}{6}
+\end{equation*}
+
+% Integral
+Thus
+$\lim\limits_{x\to\infty}\int_0^x\frac{\sin x}{x}\,\mathrm{d}x
+=\frac{\pi}{2}$
+and so by definition,
+\begin{equation*}
+\int_0^\infty\frac{\sin x}{x}\,\mathrm{d}x=\frac{\pi}{2}
+\end{equation*}
+
+% Product with two lines of subscripts
+\begin{equation*}
+p_k(x)=\prod_{\substack{i=1\\i\ne k}}^n
+\left(\frac{x-t_i}{t_k-t_i}\right)
+\end{equation*}
+
+% Sideset command
+Sideset
+$\sideset{_{ll}^{ul}}{_{lr}^{ur}}\bigcup$
+
+% Use defined operators
+We denote the closure of $A$ in the subspace $Y$ of $X$ by
+$\cl_Y(A)$
+For $f\in L^\infty(R)$, we define
+\begin{equation*}
+||f||_\infty=\esup_{x\in R}|f(x)|
+\end{equation*}
+
+% Math italic boldface
+In this case, we define
+\begin{equation*}
+\boldsymbol{a}+\boldsymbol{b}=\boldsymbol{c}
+\end{equation*}
+
+\end{document}
